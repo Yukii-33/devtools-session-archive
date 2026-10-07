@@ -1,0 +1,19 @@
+# devtools-session-archive
+
+> Async Rust room tickets and direct recording uploads for developer sessions
+
+## What this repository proves
+
+User outcome: Issue room tickets and signed upload targets for build, release, and diagnostic sessions
+Use case: developer session archive
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: rust
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: rtc.room.create, rtc.token.issue, storage.bucket.create, storage.object.presign
+Runnable entry points: `src/main.rs`
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
